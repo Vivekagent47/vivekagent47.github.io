@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
     <head>
         <meta charset="UTF-8">
@@ -21,7 +20,6 @@
     </head>
 
     <body>
-
         <div class="header">
             <div class="fixed-content">
                 <img class="port" src="profile.jpg">
@@ -39,6 +37,7 @@
         <div class="second">
             <div class="fixed-content">
                 <h1>Summary</h1>
+                <br>
                 <p>Third year Computer Science undergraduate pursuing Bachelor of Engineering at Dr. Ambedker Institute of
                     Technology for Handicapped. <br>Interested in Web development using Vuejs and HTML/CSS/Javascript.
                     And also in Python programming.</p>
@@ -133,7 +132,7 @@
                                 </script>
                                 <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
                                     <div class="timeline-entry-inner">
-                                        <div class="timeline-icon color-3">
+                                        <div class="timeline-icon color-2">
                                         </div>
                                     </div>
                                 </article>
@@ -141,7 +140,65 @@
                         </div>
                     </div>
                 </div>
-                <div>
+            <div>
+        </section>
+
+        <section class="colorlib-experience" data-section="experience">
+            <div class="colorlib-narrow-content">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                        <h2>Education</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="timeline-centered">
+                                <script type="text/javascript">
+                                    var timeSpan = ["August 2018 - Present", "April 2017 - March 2018", "April 2015 - March 2016"];
+                                    var AT = ["Dr. Ambedker Institute of Technology for Handicapped, Kanpur",
+                                            "Disha Delphi Global Senior Secondary School, Kota",
+                                            "Sarang Convent School, Dhampur",
+                                    ];
+                                    var internType = ["Bachelor of Technology", "Senior Secondary (XII)", "High School"];
+                                    var descriptions = [
+                                        "",
+                                        "",
+                                        ""
+                                    ];
+                                    var iclass = ["code", "code"];
+                                    var color = [5];
+                                    for (let i = 0; i < AT.length; i++) {
+                                        var dir = (i % 2 == 0) ? "Right" : "Left";
+                                        document.write(
+                                            '<article class="timeline-entry animate-box" data-animate-effect="fadeIn' +
+                                            dir + '">\
+										<div class="timeline-entry-inner">\
+											<div class="timeline-icon color-' + color[5] + '">\
+											</div>\
+											<div class="timeline-label">\
+												<h2><a href="#">' + AT[i] + '</a> <span>' + timeSpan[i] + '</span></h2>\
+												<p><strong><a href="#">' + internType[i] + '</a></strong>\
+													<br> ' + descriptions[i] + '</p>\
+												<p></p>\
+											</div>\
+										</div>\
+									</article>');
+                                    }
+
+                                </script>
+                                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon color-2">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div>
         </section>
 
 
@@ -149,6 +206,9 @@
             <div class="second">
                 <div class="fixed-content">
                     <h1>Contact Me</h1>
+                    <br>
+                    <p>My inbox is always open. Whether you have a question or just want to say hello, 
+                        <br>I'll try my best to get back to you! Feel free to mail me about any relevant job updates.</p>
                 </div>
             </div>
             <div class="fixed-content">
@@ -181,7 +241,6 @@
         <script src="js/services.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
         <script src="js/script.js"></script>
-
     </body>
 
 </html>

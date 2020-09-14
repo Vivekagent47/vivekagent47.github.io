@@ -12,19 +12,11 @@ body {
 i {
   color: #fff;
 }
-.carousel-item {
-  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/95581/header.png');
-  opacity: 0.8;
-  height: 100%;
-}
 .fixed-content {
   width: auto;
   float: none;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0 auto;
   padding: 40px;
   text-align: center;
 }
@@ -32,7 +24,6 @@ i {
   background: #000000;
   /*background-attachment: fixed;*/
   color: #FFF;
-  height: 100%;
   min-width: 100%;
 }
 .header .port {

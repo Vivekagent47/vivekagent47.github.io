@@ -1,104 +1,41 @@
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-}
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat';
-}
-i {
-  color: #fff;
-}
-.fixed-content {
-  width: auto;
-  float: none;
-  display: block;
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
-}
-.header {
-  background: #000000;
-  /*background-attachment: fixed;*/
-  color: #FFF;
-  min-width: 100%;
-}
-.header .port {
-  border-radius: 50%;
-  border: 6px #ccc solid;
-  width: 16%;
-  margin: 0 0 40px 0;
-}
-.icon-row {
-  margin: 45px auto;
-  width: 100%;
-}
-.icon-row i {
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 44px;
-  margin: 0px 20px;
-  padding: 20px 30px;
-  transition: all 400ms ease-in-out;
-}
-.icon-row i:hover {
-  background: #FFF;
-  color: #ca5549;
-}
-.second {
-  background: #eee;
-  color: #888;
-  width: 100%;
-}
-#portfolio h2,
-#contact h2 {
-  font-size: 40px;
-  margin: 0 0 15px 0;
-}
-.panel {
-  font-family: 'Indie Flower', cursive;
-  width:100%;
-}
-.footer {
-  color: #666;
-}
-.footer .blue i {
-  color: #d2d6dc;
-}
-.footer .blue i:hover {
-  background: #3c7fc6;
-  color: #d2d6dc;
-}
-.footer .fa-chevron-up {
-  cursor: pointer;
-  font-size: 34px;
-  margin: 40px 0 0 0;
-  position: relative;
-  top: 0px;
-}
-.footer .fa-chevron-up:hover {
-  -webkit-animation: up 1s infinite;
-  /* Chrome, Safari, Opera */
-  animation: up 1s infinite;
-}
-@-webkit-keyframes up {
-  0% {
-    top: 0px;
-  }
-  25% {
-    top: 5px;
-  }
-  50% {
-    top: 0px;
-  }
-  75% {
-    top: 5px;
-  }
-  100% {
-    top: 0px;
-  }
+    background: #070831;
+    font-family: 'Courier Prime', monospace;
 }
 
+nav {
+    height: 60px;
+    border-bottom: solid 2px #64FFDA;
+}
+
+p {
+    color: #64FFDA;
+    font-size: 20px;
+}
+
+h2 {
+    color: #CCD6F6;
+    font-size: 80px;
+}
+
+h3 {
+    color: #8892B0;
+    font-size: 50px;
+}
+.home-inside {
+    display: block;
+    width: 60%;
+    margin: 100px auto;
+}
+.home-inside .about{
+    color: #E0E0E0;
+    width: 550px;
+    text-align: justify;
+    padding-top: 60px;
+    font-size: 24px;
+}
+.home-inside p:nth-child(1){
+    padding-bottom: 20px;
+}

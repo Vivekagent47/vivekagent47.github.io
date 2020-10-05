@@ -14,7 +14,10 @@ p {
     color: #64FFDA;
     font-size: 20px;
 }
-
+a {
+    color: #64FFDA;
+    font-size: 20px;
+}
 h2 {
     color: #CCD6F6;
     font-size: 80px;
@@ -38,4 +41,46 @@ h3 {
 }
 .home-inside p:nth-child(1){
     padding-bottom: 20px;
+}
+
+.social {
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+}
+.social ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 0 auto;
+    background: #64FFDA;
+}
+.social ul li a img {
+    width: 30px;
+    margin: 10px 0;
+}
+.social ul li a:hover img{
+    transform: translateY(-5px);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.email {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+}
+.email div::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 0 auto;
+    background: #64FFDA;
+}
+.email div a {
+    color: #64FFDA;
+    font-size: 20px;
+    margin: 10px 0;
+    writing-mode: vertical-rl;
 }

@@ -36,7 +36,7 @@ h3 {
     color: #E0E0E0;
     width: 550px;
     text-align: justify;
-    padding-top: 60px;
+    padding-top: 80px;
     font-size: 24px;
 }
 .home-inside p:nth-child(1){
@@ -57,7 +57,7 @@ h3 {
     background: #64FFDA;
 }
 .social ul li a img {
-    width: 30px;
+    width: 25px;
     margin: 10px 0;
 }
 .social ul li a:hover img{
@@ -80,7 +80,7 @@ h3 {
 }
 .email div a {
     color: #64FFDA;
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px 0;
     writing-mode: vertical-rl;
 }

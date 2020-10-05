@@ -24,8 +24,14 @@ h2 {
 }
 
 h3 {
+    padding-top: 30px;
     color: #8892B0;
     font-size: 50px;
+    font-weight: bolder;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
 }
 .home-inside {
     display: block;
@@ -34,13 +40,13 @@ h3 {
 }
 .home-inside .about{
     color: #E0E0E0;
-    width: 550px;
+    /* width: 550px; */
     text-align: justify;
     padding-top: 80px;
     font-size: 24px;
 }
 .home-inside p:nth-child(1){
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .social {
@@ -64,7 +70,9 @@ h3 {
     transform: translateY(-5px);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
-
+.social-mobile {
+    display: none;
+}
 .email {
     position: fixed;
     bottom: 0;
@@ -83,4 +91,78 @@ h3 {
     font-size: 24px;
     margin: 10px 0;
     writing-mode: vertical-rl;
+}
+
+@media only screen and (max-width: 768px) {
+    #home {
+        margin-bottom: 50px;
+    }
+    .home-inside {
+        width: 80%;
+        display: block;
+        margin: 50px auto;
+    }
+    .home-inside h2 {
+        font-size: 36px;
+    }
+    .home-inside h3 {
+        font-size: 36px;
+    }
+    .home-inside .about {
+        text-align: unset;
+    }
+    .social{
+        display: none;
+    }
+    .email{
+        display: none;
+    }
+    .social-mobile {
+        display: block;
+    }
+    .social-mobile ul::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 50px;
+        margin: auto 0;
+        background: #64FFDA;
+    }
+    .social-mobile ul {
+        display: flex;
+    }
+    .social-mobile ul li a img {
+        display: block;
+        margin: auto 10px;
+        width: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-mobile p {
+        margin: 20px 0;
+        font-size: 16px;
+        display: flex;
+    }
+    .social-mobile p::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 50px;
+        margin: auto 0;
+        background: #64FFDA;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .home-inside p {
+        font-size: 14px;
+    }
+    .home-inside h2 {
+        font-size: 24px;
+    }
+    .home-inside h3 {
+        font-size: 24px;
+    }
+    .home-inside .about {
+        font-size: 16px;
+    }
 }

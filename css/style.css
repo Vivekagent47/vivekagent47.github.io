@@ -102,14 +102,20 @@ ul {
         display: block;
         margin: 50px auto;
     }
+    .home-inside p:nth-child(1){
+        font-size: 16px;
+    }
     .home-inside h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
     .home-inside h3 {
+        padding-top: 10px;
         font-size: 36px;
     }
     .home-inside .about {
+        font-size: 20px;
         text-align: unset;
+        padding-top: 30px;
     }
     .social{
         display: none;
@@ -140,8 +146,11 @@ ul {
     }
     .social-mobile p {
         margin: 20px 0;
-        font-size: 16px;
         display: flex;
+    }
+    .social-mobile p a {
+        font-size: 16px;
+        padding: 0 10px;
     }
     .social-mobile p::before {
         content: "";

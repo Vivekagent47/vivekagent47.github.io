@@ -93,7 +93,16 @@ ul {
     writing-mode: vertical-rl;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1390px){
+    .home-inside h2 {
+        font-size: 50px;
+    }
+    .home-inside h3 {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
     #home {
         margin-bottom: 50px;
     }

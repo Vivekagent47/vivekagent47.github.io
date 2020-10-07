@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     padding-top: 30px;
-    color: #8892B0;
+    color: #E0E0E0;
     font-size: 50px;
     font-weight: bolder;
 }
@@ -35,11 +35,11 @@ ul {
 }
 .home-inside {
     display: block;
-    width: 60%;
-    margin: 100px auto;
+    width: 70%;
+    margin: 150px auto;
 }
-.home-inside .about{
-    color: #E0E0E0;
+.home-inside .quote{
+    color: #8892B0;
     /* width: 550px; */
     text-align: justify;
     padding-top: 80px;
@@ -93,12 +93,32 @@ ul {
     writing-mode: vertical-rl;
 }
 
+.about-inside {
+    display: block;
+    width: 70%;
+    margin: 200px auto 50px auto;   
+}
+.about-inside p {
+    color: #8892B0;
+    font-size: 24px;
+    text-align: justify;
+    padding-top: 40px;
+}
+
 @media only screen and (max-width: 1390px){
     .home-inside h2 {
         font-size: 50px;
     }
     .home-inside h3 {
         font-size: 44px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .home-inside {
+        width: 60%;
+    }
+    .about-inside {
+        width: 60%;
     }
 }
 
@@ -121,10 +141,22 @@ ul {
         padding-top: 10px;
         font-size: 36px;
     }
-    .home-inside .about {
-        font-size: 20px;
+    .home-inside .quote {
+        font-size: 16px;
         text-align: unset;
         padding-top: 30px;
+    }
+    .about-inside {
+        width: 80%;
+        display: block;
+        margin: 50px auto;
+    }
+    .about-inside h2 {
+        font-size: 32px;
+    }
+    .about-inside p {
+        font-size: 16px;
+        text-align: unset;
     }
     .social{
         display: none;
@@ -180,7 +212,13 @@ ul {
     .home-inside h3 {
         font-size: 24px;
     }
-    .home-inside .about {
-        font-size: 16px;
+    .home-inside .quote {
+        font-size: 14px;
+    }
+    .about-inside h2 {
+        font-size: 24px;
+    }
+    .about-inside p {
+        font-size: 14px;
     }
 }

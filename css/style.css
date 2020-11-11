@@ -105,6 +105,32 @@ ul {
     padding-top: 40px;
 }
 
+.skills-inside {
+    display: block;
+    width: 70%;
+    margin: 100px auto 50px auto;
+}
+
+.skills-list {
+    display: block;
+    width: 70%;
+    margin: 250px auto 600px auto;      
+}
+.skills-list ul {
+    position: relative;
+    display: block;
+    left: 45%;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.skills-list ul li {
+    position: absolute;
+    transition: all 2s linear;
+}
+.skills-list ul li img {
+    width: 3em;
+}
+
 @media only screen and (max-width: 1390px){
     .home-inside h2 {
         font-size: 50px;

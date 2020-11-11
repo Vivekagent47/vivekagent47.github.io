@@ -132,7 +132,7 @@ ul {
 }
 
 @media only screen and (max-width: 1390px){
-    .home-inside h2 {
+    h2 {
         font-size: 50px;
     }
     .home-inside h3 {
@@ -144,6 +144,9 @@ ul {
         width: 60%;
     }
     .about-inside {
+        width: 60%;
+    }
+    .skills-inside {
         width: 60%;
     }
 }
@@ -160,7 +163,7 @@ ul {
     .home-inside p:nth-child(1){
         font-size: 16px;
     }
-    .home-inside h2 {
+    h2 {
         font-size: 32px;
     }
     .home-inside h3 {
@@ -176,9 +179,6 @@ ul {
         width: 80%;
         display: block;
         margin: 50px auto;
-    }
-    .about-inside h2 {
-        font-size: 32px;
     }
     .about-inside p {
         font-size: 16px;
@@ -227,12 +227,18 @@ ul {
         margin: auto 0;
         background: #64FFDA;
     }
+    .skills-inside {
+        width: 80%;
+    }
+    .skills-list {
+        display: none;
+    }
 }
 @media only screen and (max-width: 350px) {
     .home-inside p {
         font-size: 14px;
     }
-    .home-inside h2 {
+    h2 {
         font-size: 24px;
     }
     .home-inside h3 {
@@ -240,9 +246,6 @@ ul {
     }
     .home-inside .quote {
         font-size: 14px;
-    }
-    .about-inside h2 {
-        font-size: 24px;
     }
     .about-inside p {
         font-size: 14px;

@@ -111,23 +111,23 @@ ul {
     margin: 100px auto 50px auto;
 }
 
-.skills-list {
+.skills-window {
     display: block;
     width: 70%;
     margin: 250px auto 600px auto;      
 }
-.skills-list ul {
+.skills-window ul {
     position: relative;
     display: block;
     left: 45%;
     list-style-type: none;
     margin: 0 auto;
 }
-.skills-list ul li {
+.skills-window ul li {
     position: absolute;
     transition: all 2s linear;
 }
-.skills-list ul li img {
+.skills-window ul li img {
     width: 3em;
 }
 
@@ -148,6 +148,27 @@ ul {
     }
     .skills-inside {
         width: 60%;
+    }
+}
+
+@media only screen and (max-width: 901px) {
+    .skills-mobile ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px auto;
+    }
+    .skills-mobile ul li:nth-child(1){
+        display: none
+    }
+    .skills-mobile ul li {
+        justify-content: center;
+        margin: auto;
+        padding: 20px;
+    }
+    .skills-mobile ul li img {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -229,9 +250,6 @@ ul {
     }
     .skills-inside {
         width: 80%;
-    }
-    .skills-list {
-        display: none;
     }
 }
 @media only screen and (max-width: 350px) {

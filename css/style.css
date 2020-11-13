@@ -290,7 +290,7 @@ ul {
     animation: rotate-circle .01s  linear .0s infinite normal;
     border-radius: 32px;
 }
-h1 {
+.happy-diwali h1 {
     font-family: 'Raleway', sans-serif;
     display: flex;
 	flex-direction: column;

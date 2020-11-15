@@ -130,9 +130,6 @@ ul {
 .skills-window ul li img {
     width: 3em;
 }
-.skills-window ul li:nth-child(1) img{
-    border-radius: 50%;
-}
 
 @media only screen and (max-width: 1390px){
     h2 {

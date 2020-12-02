@@ -127,6 +127,9 @@ ul {
     position: absolute;
     transition: all 2s linear;
 }
+.skills-window ul li:nth-child(1) img{
+    border-radius: 50%;
+}
 .skills-window ul li img {
     width: 3em;
 }

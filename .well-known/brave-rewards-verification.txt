@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: vivekagent47.github.io
+Token: 7372a14313786a22725508ba6a0b38fb18143bb4bea129e533b8a4d5bbcea38d

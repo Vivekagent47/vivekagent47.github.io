@@ -88,6 +88,7 @@ ul {
 }
 .email div a {
     color: #64FFDA;
+    text-decoration: none;
     font-size: 24px;
     margin: 10px 0;
     writing-mode: vertical-rl;

@@ -3,6 +3,7 @@
 body {
     background: #070831;
     font-family: 'Courier Prime', monospace;
+    cursor: default;
 }
 p {
     color: #64FFDA;
@@ -44,25 +45,23 @@ nav .resume {
 nav .resume a {
     position: relative;
     text-decoration: none;
+    font-size: 24px;
     float: right;
     padding: 10px;
-    border-radius: 8px;
-    border: solid 2px #64FFDA;
+    border: solid 1px #64FFDA;
 }
 nav .resume a:hover {
     background: #64FFDA;
     color: #070831;
 }
 
-
 .home-inside {
     display: block;
-    width: 70%;
+    width: 60%;
     margin: 150px auto;
 }
 .home-inside .quote{
     color: #8892B0;
-    /* width: 550px; */
     text-align: justify;
     padding-top: 80px;
     font-size: 24px;
@@ -117,7 +116,7 @@ nav .resume a:hover {
 
 .about-inside {
     display: block;
-    width: 70%;
+    width: 60%;
     margin: 200px auto 50px auto;   
 }
 .about-inside p {
@@ -129,7 +128,7 @@ nav .resume a:hover {
 
 .skills-inside {
     display: block;
-    width: 70%;
+    width: 60%;
     margin: 100px auto 50px auto;
 }
 
@@ -177,6 +176,12 @@ nav .resume a:hover {
 }
 
 @media only screen and (max-width: 901px) {
+    .social {
+        left: 30px;
+    }
+    .email {
+        right: 30px;
+    }
     .skills-mobile ul {
         position: relative;
         display: flex;
@@ -198,13 +203,19 @@ nav .resume a:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    nav .resume {
+        margin: 0px 40px;
+    }
+    nav .resume a {
+        font-size: 14px;
+    }
     #home {
         margin-bottom: 50px;
     }
     .home-inside {
         width: 80%;
         display: block;
-        margin: 50px auto;
+        margin: 30px auto;
     }
     .home-inside p:nth-child(1){
         font-size: 16px;

@@ -7,7 +7,6 @@ jQuery(document).ready(function($) {
         $elements = $('.skills-window>ul>li:not(:first-child)'),
         numberOfElements = (type === 1) ?  $elements.length : $elements.length - 1, 
         slice = 360 * type / numberOfElements;
-    
         $elements.each(function(i) {
             var $self = $(this),
                 rotate = slice * i + start,

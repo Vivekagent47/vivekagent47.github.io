@@ -31,16 +31,28 @@ ul {
 nav {
     position: relative;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
     /* border-bottom: solid 2px #64FFDA; */
 }
-
+nav .logo {
+    position: relative;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin: 20px 0px;
+}
+nav .logo a img {
+    width: 30px;
+}
 nav .resume {
     position: relative;
-    height: 60px;
     display: flex;
+    height: 60px;
     align-items: center;
-    float: right;
-    margin: 20px 40px;
+    margin: 20px 0px;
 }
 nav .resume a {
     position: relative;
@@ -203,8 +215,14 @@ nav .resume a:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    nav {
+        max-width: 85%;
+    }
+    nav .logo {
+        margin: 10px 0px;
+    }
     nav .resume {
-        margin: 0px 40px;
+        margin: 10px 0px;
     }
     nav .resume a {
         font-size: 14px;

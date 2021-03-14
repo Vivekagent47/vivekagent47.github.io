@@ -15,7 +15,7 @@ a {
 }
 h2 {
     color: #CCD6F6;
-    font-size: 80px;
+    font-size: 40px;
 }
 
 h3 {
@@ -35,7 +35,6 @@ nav {
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
-    /* border-bottom: solid 2px #64FFDA; */
 }
 nav .logo {
     position: relative;
@@ -60,23 +59,43 @@ nav .resume a {
     font-size: 24px;
     float: right;
     padding: 10px;
+    border-radius: 4px;
     border: solid 1px #64FFDA;
 }
 nav .resume a:hover {
     background: #64FFDA;
     color: #070831;
 }
-
+.get-in-touch {
+    position: relative;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin: 80px 0px 40px 0;
+}
+.get-in-touch a {
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    float: right;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px #64FFDA;
+}
+.get-in-touch a:hover{
+    background: #64FFDA;
+    color: #070831;
+}
 .home-inside {
     display: block;
     width: 60%;
     margin: 150px auto;
 }
 .home-inside .quote{
+    max-width: 60%;
     color: #8892B0;
-    text-align: justify;
     padding-top: 80px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .home-inside p:nth-child(1){
     padding-bottom: 10px;
@@ -85,7 +104,7 @@ nav .resume a:hover {
 .social {
     position: fixed;
     bottom: 0;
-    left: 100px;
+    left: 40px;
 }
 .social ul::after {
     content: "";
@@ -109,7 +128,7 @@ nav .resume a:hover {
 .email {
     position: fixed;
     bottom: 0;
-    right: 100px;
+    right: 40px;
 }
 .email div::after {
     content: "";
@@ -127,15 +146,29 @@ nav .resume a:hover {
 }
 
 .about-inside {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 60%;
     margin: 200px auto 50px auto;   
 }
 .about-inside p {
     color: #8892B0;
-    font-size: 24px;
-    text-align: justify;
+    font-size: 18px;
     padding-top: 40px;
+}
+.about-text {
+    max-width: 50%;
+}
+.about-img {
+    max-width: 250px;
+    border-radius: 4px;
+    border: 1px solid #64FFDA;
+}
+.about-img img{
+    border-radius: 4px;
+    margin: -10px 0 0 -10px;
 }
 
 .skills-inside {
@@ -211,6 +244,31 @@ nav .resume a:hover {
     .skills-mobile ul li img {
         width: 50px;
         height: 50px;
+    }
+    .about-inside {
+        display: block;
+        width: 60%;
+        margin: 200px auto 50px auto;   
+    }
+    .about-inside p {
+        color: #8892B0;
+        font-size: 18px;
+        padding-top: 40px;
+    }
+    .about-text {
+        max-width: 100%;
+    }
+    .about-img {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        max-width: 150px;
+        border-radius: 4px;
+        border: 1px solid #64FFDA;
+    }
+    .about-img img{
+        border-radius: 4px;
+        margin: -10px 0 0 -10px;
     }
 }
 
@@ -304,6 +362,12 @@ nav .resume a:hover {
     }
     .skills-inside {
         width: 80%;
+    }
+    .get-in-touch {
+        margin: 20px 0px 10px 0;
+    }
+    .get-in-touch a {
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 350px) {

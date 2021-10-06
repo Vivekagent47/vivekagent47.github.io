@@ -171,6 +171,14 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+#navlogo{
+  font-weight: bold;
+  font-size: larger;
+}
+.nav__logo{
+  display:flex;
+  align-items: center;
+}
 
 .nav__logo,
 .nav__toggle {
@@ -768,6 +776,11 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.submit__button {
+  width:150px;
+  border: none;
 }
 
 .footer {

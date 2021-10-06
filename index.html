@@ -13,7 +13,10 @@
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Vivek</a>
+                <div class="nav__logo">
+                    <a href="#" id="navlogo">Vivek</a>
+                </div>
+                
 
                 <div id="nav-menu" class="nav__menu">
                     <ul class="nav__list grid">
@@ -641,11 +644,11 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <!-- <form action="" class="contact__form grid">
                         <h3>
                             Working on the Connectivity of the form deploy as soon as possible!
                         </h3>
-                        <!-- <div class="contact__inputs grid">
+                        <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
                                 <input type="text" class="contact__input">
@@ -663,9 +666,31 @@
                             <a href="#" class="button button--flex">
                                 Send Message <i class="uil uil-message button__icon"></i>
                             </a>
-                        </div> -->
+                        </div>
+                    </form> -->
+                    <form 
+                        class="pageclip-form contact__form grid" method="post" id="recaptcha_form">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" name="name" placeholder="Your Name" minlength="3" maxlength="50" class="contact__input"
+                                    required="required">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" name="email" placeholder="example@mail.com" class="contact__input" required="required">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="Message" id="" cols="0" rows="4" class="contact__input"></textarea>
+                        </div>
+                    
+                        <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                        <button type="submit" data-callback='onSubmit' data-action='submit'
+                            class="pageclip-form__submit button button--flex submit__button">Send Message<i
+                                class="uil uil-message button__icon"></i></button>
                     </form>
-                </div>
             </section>
         </main>
 

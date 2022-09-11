@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+  },
+  "dependencies": {
+    "gsap": "^3.8.0",
+    "lottie-web": "^5.8.1",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-reveal": "^1.2.2",
+    "sass": "^1.43.4",
+    "typed.js": "^2.0.12",
+    "url-loader": "^4.1.1",
+    "vanilla-tilt": "^1.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "eslint": "^8.23.0",
+    "eslint-config-next": "12.0.2",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}

@@ -58,15 +58,7 @@ const Footer = () => {
         height={180}
       />
       <p className="absolute left-[15%] -bottom-[7.5rem] font-extralight text-sm xl:text-base w-[40%]">
-        Developed with{" "}
-        <span role="img" aria-label="emoji" className="animate-pulse">
-          ❤️
-        </span>{" "}
-        by <span className="text-gray.dark.5">Shubh Porwal</span>
-        <br></br>
-        *Credits to the owners for the codepen and vectors/icons used.
-        <br />
-        These were picked from various sources over the internet.
+        Template Credits: <span className="text-gray.dark.5">Shubh Porwal</span>
       </p>
 
       <style jsx global>{`

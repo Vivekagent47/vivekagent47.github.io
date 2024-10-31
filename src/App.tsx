@@ -1,5 +1,3 @@
-"use client";
-
 import BackgroundSVG from "@/components/hero/BackgroundSVG";
 import Loader from "@/components/Loader";
 import { cn } from "@/lib/utils";
@@ -8,17 +6,11 @@ import { motion, useMotionValue } from "framer-motion";
 import { debounce } from "lodash";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-export default function Home() {
+function App() {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [loading, setLoading] = useState(true);
   const dimensionsRef = useRef({ width: 0, height: 0 });
-  const isMobile = useMemo(() => {
-    if (typeof window !== "undefined") {
-      return window.innerWidth < 768;
-    }
-
-    return false;
-  }, []);
+  const isMobile = useMemo(() => window.innerWidth < 768, []);
 
   const svgOpacity = useMotionValue(1);
   const backgroundGradient = useMotionValue(
@@ -64,3 +56,5 @@ export default function Home() {
     </ReactLenis>
   );
 }
+
+export default App;

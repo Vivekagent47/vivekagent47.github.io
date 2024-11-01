@@ -55,7 +55,6 @@ function AnimatedShape({
         cancelAnimationFrame(animationRef.current);
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [animate, onComplete]);
 
   const centerX = width / 2;
@@ -66,15 +65,15 @@ function AnimatedShape({
                 L ${centerX} ${yStart + 100} 
                 L ${centerX} ${yStart + 132} 
                 L ${centerX + (side === "left" ? -xOffset : xOffset)} ${
-                  yStart + 32
-                } Z`;
+    yStart + 32
+  } Z`;
 
   return (
     <svg
       width={width}
       height={height}
       viewBox={`0 0 ${width} ${height}`}
-      className="fixed left-0 top-0"
+      className="fixed top-0 left-0"
     >
       <motion.path
         ref={scope}

@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="absolute top-0 flex h-[90px] w-full select-none items-center justify-between px-8 text-3xl text-light">
+    <div className="select-none text-light text-3xl flex justify-between w-full items-center h-[90px] px-8 absolute top-0">
       <p className="text-3xl">VC</p>
     </div>
   );

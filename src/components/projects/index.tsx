@@ -1,16 +1,16 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import { useLenis } from "@studio-freight/react-lenis";
 import {
+  AnimatePresence,
   MotionValue,
   motion,
-  AnimatePresence,
-  useSpring,
   useAnimationControls,
+  useSpring,
 } from "framer-motion";
+import { X } from "lucide-react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useIsTouchDevice } from "../../hooks/useIsTouchDevice";
 import Curve from "./Curve";
 import Overlay from "./Overlay";
-import { X } from "lucide-react";
-import { useLenis } from "@studio-freight/react-lenis";
 
 type ProjectsSectionProps = {
   isProjectsInView: boolean;
@@ -22,7 +22,6 @@ export type Project = {
   number: string;
   title: string;
   category: string;
-  year: string;
   image: string;
   imageDetail: string;
   description: string;
@@ -74,66 +73,47 @@ const Projects: React.FC<ProjectsSectionProps> = ({
   const projects: Project[] = [
     {
       number: "01",
-      title: "MeetMate",
-      category: "Web Development / Design",
-      year: "2024-25",
-      image: "./img/meetmate/landing.webp",
-      imageDetail: "./img/meetmate/dashboard.webp",
+      title: "Discount Cup",
+      category: "Web Development",
+      image: "/discount-cup.png",
+      imageDetail: "/discount-cup.png",
       description:
-        "MeetMate is a web application streamlining appointment management for businesses and clients. It simplifies scheduling, allowing clients to book with various companies while businesses manage availability efficiently. This approach reduces time spent on booking and organizing appointments for all parties.",
+        "Developed a dynamic pricing solution that adjusts discounts based on the purchasing power of customers' countries, increasing accessibility and global sales. Integrated a customizable banner feature to display tailored promotions on websites, enhancing user engagement and driving higher conversion rates.",
       color: "77, 128, 237",
       technologies: {
-        frontend: "NextJS, TailwindCSS, ThreeJS",
-        backend: "Spring Boot, GraphQL, PostgreSQL, MongoDB",
+        frontend: "NextJS, TailwindCSS, Framer Motion",
+        backend: "REST API, PostgreSQL",
       },
-      link: "https://meetmate.dev",
+      link: "https://discount-cup.vercel.app/",
     },
     {
       number: "02",
-      title: "fishtrack.",
-      category: "iOS Development / Product Design",
-      year: "2023-24",
-      image: "./img/fishtrack/preview.webp",
-      imageDetail: "./img/fishtrack/mockup.webp",
+      title: "coviz.",
+      category: "Web Development",
+      image: "/coviz.gif",
+      imageDetail: "/coviz.gif",
       description:
-        "fishtrack is an iOS app for fishing enthusiasts to log and analyze their catches. It extracts date and location from photos, allows users to add fish details, and provides filtering options. Anglers can easily track their catches and view statistics, gaining insights into their fishing patterns over time.",
+        "Stay informed with our beautifully designed COVID-19 tracking platform, featuring real-time case updates and stunning animations that make data easy to understand. Our interactive visualizations provide a seamless and engaging way to explore pandemic trends globally and locally, helping you stay aware and prepared.",
       technologies: {
-        frontend: "Swift, SwiftUI, UIKit",
-        backend: "Supabase",
+        frontend: "Reactjs, Redux, D3.js",
+        backend: "Third Party API",
       },
       color: "0 122 255",
-      link: "https://github.com/bencodes07/fishtrackMobile",
+      link: "https://vivekagent47coviz.netlify.app/",
     },
     {
       number: "03",
-      title: "TCG-Home",
+      title: "Typing-Speed",
       category: "Frontend Development",
-      year: "2021-Now",
-      image: "./img/tcg/landing.webp",
-      imageDetail: "./img/tcg/collection.webp",
-      description: `TCG Home is an innovative online platform transforming the global niche market of collectible card games like "Magic: The Gathering". This project moves such games into the digital era by creating a comprehensive seamless portal where collecting, playing, and trading can take place.`,
+      image: "/typer.png",
+      imageDetail: "/typer.png",
+      description: `Test and improve your typing speed with our sleek and interactive platform. Get instant feedback, track your progress over time, and challenge yourself with engaging typing exercises designed to boost accuracy and words per minute in a fun and motivating way.`,
       technologies: {
-        frontend: "VueJS, Typescript, GraphQL",
+        frontend: "jQuery, CSS, HTML",
         backend: "Not Involved",
       },
       color: "121 35 208",
-      link: "https://tcg-home.com",
-    },
-    {
-      number: "04",
-      title: "Portfolio",
-      category: "Web Development",
-      year: "2024",
-      image: "./img/portfolio/landing.webp",
-      imageDetail: "./img/portfolio/about.webp",
-      description:
-        "This portfolio showcases a range of web development projects, demonstrating proficiency in creating practical, user-focused applications. From appointment management systems to specialized mobile apps, each project highlights problem-solving skills and technical expertise. Click the arrow to view the Figma Design",
-      technologies: {
-        frontend: "React, TailwindCSS, Framer Motion",
-        backend: "N/A",
-      },
-      color: "255 255 255",
-      link: "https://www.figma.com/design/fSOLXbVsHPG3k61ffrfFLQ/Portfolio?m=auto&t=KL4Fad6LDLPN60Us-1",
+      link: "https://vivekagent47.github.io/typingSpeed/",
     },
   ];
 
@@ -156,7 +136,7 @@ const Projects: React.FC<ProjectsSectionProps> = ({
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
     },
-    [cursorX, cursorY],
+    [cursorX, cursorY]
   );
 
   const handleScroll = useCallback(() => {
@@ -177,12 +157,12 @@ const Projects: React.FC<ProjectsSectionProps> = ({
       if (isScrolling) {
         const hoverItem = document.elementFromPoint(
           cursorX.get(),
-          cursorY.get(),
+          cursorY.get()
         );
         const projectItem = hoverItem?.closest(".project-item");
         if (projectItem) {
           const index = Array.from(items.children).indexOf(
-            projectItem as Element,
+            projectItem as Element
           );
           setActiveIndex(index);
         } else {
@@ -291,7 +271,6 @@ const Projects: React.FC<ProjectsSectionProps> = ({
                   <p className="poppins-extralight text-lg">
                     {project.category}
                   </p>
-                  <p className="poppins-extralight text-lg">{project.year}</p>
                 </div>
               </motion.div>
             ))}

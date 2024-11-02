@@ -13,7 +13,7 @@ import "./assets/globals.scss";
 import About from "./components/about";
 import Contact from "./components/contact";
 import BackgroundSVG from "./components/hero/BackgroundSVG";
-import Navbar from "./components/hero/Navbar";
+import Navbar from "./components/hero/Header";
 import Loader from "./components/Loader";
 import MouseGradient from "./components/MouseGradient";
 import Projects from "./components/projects";

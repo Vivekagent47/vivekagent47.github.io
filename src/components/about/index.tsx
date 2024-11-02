@@ -1,12 +1,11 @@
-import { MotionValue, useAnimationControls, motion } from "framer-motion";
+import { useLenis } from "@studio-freight/react-lenis";
+import { motion, MotionValue, useAnimationControls } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Magnetic from "../Magnetic";
-import { useLenis } from "@studio-freight/react-lenis";
 
 type AboutSectionProps = {
   isAboutInView: boolean;
-  isMobile: boolean;
   backgroundGradient: MotionValue<string>;
 };
 
@@ -36,7 +35,6 @@ const lineVariants = {
 
 const About: React.FC<AboutSectionProps> = ({
   isAboutInView,
-  isMobile,
   backgroundGradient,
 }) => {
   const aboutControls = useAnimationControls();
@@ -68,7 +66,7 @@ const About: React.FC<AboutSectionProps> = ({
         <motion.h1
           variants={fadeInUpVariants}
           custom={0}
-          className={`khula-semibold ${isMobile ? "text-4xl" : "text-6xl"}`}
+          className="khula-semibold text-4xl md:text-6xl"
         >
           Bridging the gap between pixel-perfect design and human-centered
           functionality, I craft frontend solutions that translate user insights
@@ -78,7 +76,7 @@ const About: React.FC<AboutSectionProps> = ({
         <motion.div
           variants={fadeInUpVariants}
           custom={1}
-          className={`mt-[10vh] ${isMobile && "mt-8"}`}
+          className="mt-8 md:mt-[10vh]"
         >
           <p className="text-gray-3 poppins-light-italic ml-2 mb-1 select-none">
             This is me.
@@ -88,38 +86,29 @@ const About: React.FC<AboutSectionProps> = ({
             className="bg-gray-3 origin-left w-full"
           ></motion.hr>
         </motion.div>
-        <div
-          className={`flex justify-between flex-row mt-16 ${
-            isMobile && "mt-8 flex-col"
-          }`}
-        >
+        <div className="flex justify-between md:flex-row md:mt-16 mt-8 flex-col">
           <div className="flex flex-col w-1/2">
             <motion.h2
               variants={fadeInUpVariants}
               custom={2}
-              className="khula-light text-5xl text-nowrap"
+              className="khula-light text-5xl"
             >
-              Hi, I'm Vivek Chauhan.
+              Hi, I'm <strong className="text-nowrap">Vivek Chauhan</strong>
             </motion.h2>
-            {!isMobile && (
-              <Magnetic>
-                <motion.button
-                  variants={fadeInUpVariants}
-                  custom={3}
-                  onClick={() => lenis?.scrollTo("#contact")}
-                  className="flex bg-dark rounded-full text-light pl-4 pr-6 gap-x-1 py-3 w-max poppins-regular mt-24 select-none"
-                >
-                  <ArrowUpRight />
-                  Get in Touch
-                </motion.button>
-              </Magnetic>
-            )}
+
+            <Magnetic>
+              <motion.button
+                variants={fadeInUpVariants}
+                custom={3}
+                onClick={() => lenis?.scrollTo("#contact")}
+                className="flex bg-dark rounded-full text-light pl-4 pr-6 gap-x-1 py-3 w-max poppins-regular mt-24 select-none"
+              >
+                <ArrowUpRight />
+                Get in Touch
+              </motion.button>
+            </Magnetic>
           </div>
-          <div
-            className={`flex flex-col gap-y-4 w-1/2 khula-light text-2xl ${
-              isMobile && "mt-8 text-lg w-full"
-            }`}
-          >
+          <div className="flex flex-col gap-y-4 md:w-1/2 khula-light md:text-2xl mt-8 text-lg w-full">
             <motion.p variants={fadeInUpVariants} custom={4}>
               As a versatile Full-Stack Developer with a proven track record in
               creating intuitive, high-performance web applications, I transform
@@ -131,19 +120,6 @@ const About: React.FC<AboutSectionProps> = ({
               that drive user engagement and business growth.
             </motion.p>
           </div>
-          {isMobile && (
-            <motion.button
-              variants={fadeInUpVariants}
-              custom={3}
-              onClick={() =>
-                document.getElementById("contact")?.scrollIntoView()
-              }
-              className="flex bg-dark rounded-full text-light pl-4 pr-6 gap-x-1 py-3 w-max h-fit poppins-regular select-none mt-8"
-            >
-              <ArrowUpRight />
-              Get in Touch
-            </motion.button>
-          )}
         </div>
       </motion.div>
     </motion.div>

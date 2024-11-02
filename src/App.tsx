@@ -201,7 +201,6 @@ function App() {
         <div ref={aboutRef} id="about">
           <About
             isAboutInView={useInView(aboutRef, { amount: 0.3 })}
-            isMobile={isMobile}
             backgroundGradient={backgroundGradient}
           />
         </div>

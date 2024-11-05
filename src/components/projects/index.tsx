@@ -88,6 +88,21 @@ const Projects: React.FC<ProjectsSectionProps> = ({
     },
     {
       number: "02",
+      title: "Clear Mark",
+      category: "Web Development",
+      image: "/clear-mark.png",
+      imageDetail: "/clear-mark.png",
+      description:
+        "Display the plagiarism report with key details like the percentage of plagiarized content and sections of the document that were flagged as plagiarized. Ensure that the results are clear and easy to interpret.",
+      color: "77, 128, 237",
+      technologies: {
+        frontend: "NextJS, TailwindCSS, Framer Motion",
+        backend: "REST API, PostgreSQL",
+      },
+      link: "https://clear-mark.vercel.app/",
+    },
+    {
+      number: "03",
       title: "coviz.",
       category: "Web Development",
       image: "/coviz.gif",
@@ -102,7 +117,7 @@ const Projects: React.FC<ProjectsSectionProps> = ({
       link: "https://vivekagent47coviz.netlify.app/",
     },
     {
-      number: "03",
+      number: "04",
       title: "Typing-Speed",
       category: "Frontend Development",
       image: "/typer.png",
